@@ -13,7 +13,7 @@ Let's start with the basics. The first question we need to ask is, of which part
 - The virtual machine interpreter
 - All other "components" will be assigned to one of the categories above.
 
-The *lexer-parser-compiler* component takes a string input of code and then generates a form bytecode. This bytecode, which we'll define ourselves, will then be passed on to the *virtual machine interpreter* (*vm*) component. This'll go through the bytecode(s), basically in a large `switch` statement (ambiguous with an `if`, `else if` & `else`). In this `switch`, the *vm* will handle all sorts of actions, like performing calculations and storing variables. It's called a *virtual machine* because it has an operator stack. This will be explained in detail later on.
+The *lexer-parser-compiler* component takes a string input of code and then generates a form a bytecode. This bytecode, which we'll define ourselves, will then be passed on to the *virtual machine interpreter* (*vm*) component. This'll go through the bytecode(s), basically in a large `switch` statement (ambiguous with an `if`, `else if` & `else`). In this `switch`, the *vm* will handle all sorts of actions, like performing calculations and storing variables. It's called a *virtual machine* because it has an operator stack. This will be explained in detail later on.
 
 ## Note
 
