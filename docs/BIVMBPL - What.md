@@ -5,7 +5,7 @@ I hope that using this guide you'll be able to create something working and expe
 
 ## Components overview
 
-![Schema 1](C:\Users\danie\source\repos\VmProgrammingLanguage\docs\img\Schema 1.png)
+![Schema 1](img/Schema 1.png)
 
 Let's start with the basics. The first question we need to ask is, of which parts does this "programming language" consist which makes it a *working* programming language? So there are a few different components, which are: 
 
