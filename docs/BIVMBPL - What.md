@@ -32,7 +32,7 @@ I'll be using C#, simply because I feel most comfortable with it, but feel free 
 3. Components
 4. Virtual Machine
 5. Lexer, parser and compiler
-   6. Lexing and parsing
+   1. Lexing and parsing
    2. Compiling
    3. Code generation
 
