@@ -16,7 +16,7 @@ First there are numbers, both integers and floating point numbers:
 
 *Note: Most programming languages also offer some sort of postfix notation to indicate if something is a floating point e.g. `100f` is a float*
 
-Next, an important type is a `string` which is basically an immutable collection of characters aka text. Strings will be defined using `""`, where the string is in-between the quotation marks. String will not be passed as bytecode, but as constant string values, since once they're defined in the DashScript code, we can safely assume that those specific strings will never change. E.g. `"Hello World!"`
+Next, an important type is a `string` which is basically an immutable collection of characters - aka text. Strings will be defined using `""`, where the string is in-between the quotation marks. String will not be passed as bytecode, but as constant string values, since once they're defined in the DashScript code, we can safely assume that those specific strings will never change. E.g. `"Hello World!"`
 
 There's also the bool type, which can have two values (keywords): `true` or `false`. These will be indicated using the mentioned keywords. 
 
