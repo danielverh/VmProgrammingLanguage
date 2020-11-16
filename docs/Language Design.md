@@ -2,6 +2,10 @@
 
 The designing the language is both exciting and creative. Basically, you can decide everything about the language yourself. You can follow along with my decisions, but you can also deviate here and there. I called my language 'DashScript'. Let's begin! 
 
+## Style
+
+The syntax and style will be quite similar to JavaScript and C (based languages). This initially means I've chosen the following syntax and style rules: Brackets for defining code [code blocks](#code%20blocks), camelCase & PascalCase, and much more minor choices which are all discussed in this chapter.  
+
 ## Types
 
 There will be different types in DashScript. All typed will have a parent type called `DashObject`. 
@@ -22,5 +26,53 @@ And lastly (for now), there's the `DashClass`. This will be a general object typ
 
 As mentioned in the previous chapter, DashScript is dynamically typed. This means that every variable can have a value of every DashObject type. This means that the programmer never has to tell the compiler of what type a variable is, when defining it, since the parser & vm don't need to know the type. 
 
+Variables will be defined as following:
 
+```variableName = <value>;``` , where value can be of any type.
 
+## Comments
+
+Comments are also important for a programming language, as they offer programmers a way to organize their code.
+
+```
+// Single line comments
+/*
+Multiple line comments
+*/
+```
+
+## Code Blocks
+
+A code block is a collection of one or more [statements](#statements) wrapped in curly brackets (`{}`). E.g.
+
+```
+{
+    <statement>*
+}
+```
+
+## Expressions
+
+Expressions are the most versatile (but also complex) part of DashScript. But in its core, an expression is an operation with one ore more arguments, which results in another value. DashScript uses the "(almost) everything is an expression" paradigm. This means that basically everything can be used both *as* and *in* an expression.
+
+```
+// The following examples are all valid expressions
+<constant int | float | bool | string values>
+<variable name>
+<function call>
+<function definition>
+<expression> + | - | * | / <expression>
+!<expression>
+-<expression>
+(<expression>)
+```
+
+## Statements
+
+Statements are expressions which can be executed on a top level. This means that they can be called directly instead of as arguments. Their syntax is as follows:
+
+```
+<expression>;
+// or
+<code block>
+```
