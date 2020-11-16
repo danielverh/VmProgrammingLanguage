@@ -1,10 +1,10 @@
 # Language Design
 
-The designing the language is both exciting and creative. Basically, you can decide everything about the language yourself. You can follow along with my decisions, but you can also deviate here and there. I called my language 'DashScript'. Let's begin! 
+The designing the language is both exciting and creative. Basically, you can decide everything about the language yourself. You can follow along with my specific language design choices, but you can also deviate in this chapter. First, the name to add some feeling to the 'programming language', I called my language 'DashScript'. 
 
 ## Style
 
-The syntax and style will be quite similar to JavaScript and C (based languages). This initially means I've chosen the following syntax and style rules: Brackets for defining code [code blocks](#code%20blocks), camelCase & PascalCase, and much more minor choices which are all discussed in this chapter.  
+The syntax and style will be quite similar to JavaScript and C (and similar languages). This initially means I've chosen the following syntax and style rules: Brackets for defining code [code blocks](#code%20blocks), camelCase & PascalCase, and much more minor choices which are all discussed in this chapter.  
 
 ## Types
 
@@ -66,6 +66,20 @@ Expressions are the most versatile (but also complex) part of DashScript. But in
 -<expression>
 (<expression>)
 ```
+
+## Operations
+
+Operations, not to be confused with [statements](#statements) is the general name for functions, loops, and comparators (`if`, `else`, etc.). Their syntax is as follows:
+
+```
+// Else if statement(s)
+if <expression> => <statement>
+else if <expression> => <statement>
+else => <statement>
+
+```
+
+
 
 ## Statements
 

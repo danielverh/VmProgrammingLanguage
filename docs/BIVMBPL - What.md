@@ -17,6 +17,11 @@ The *lexer-parser-compiler* component takes a string input of code and then gene
 
 ## Note
 
-This programming language runs on a bytecode interpreter, in de form of a virtual machine. To make the language simple and more intuitive, the interpreter handles object & type casting, meaning that the language itself is dynamically typed. Other style aspects of our language will be explained later.
+This programming language runs on a bytecode interpreter, in de form of a virtual machine. To make the language simple and more intuitive, the interpreter handles object & type casting, meaning that the language itself is dynamically typed. Other style aspects of our language will be explained later. Also note that, for simplicity's sake, this series won't go in depth talking about different paradigms. So this language is multi-paradigm.
 
 I'll be using C#, simply because I feel most comfortable with it, but feel free to use any other language (though it helps if the language of your choice is object oriented). This also won't be a guide from which you can copy the code snippets to create a working program, but rather a theoretical approach which provides you with scaffolding to start on your own. This doesn't mean there'll be no code or examples, just that this is not the main focus of this series.
+
+## Further reading & resources
+
+- [Crafting Interpreters](https://craftinginterpreters.com/)
+- [Java Bytecode - Wikipedia](https://en.wikipedia.org/wiki/Java_bytecode)
