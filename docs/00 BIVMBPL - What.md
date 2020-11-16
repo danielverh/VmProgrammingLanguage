@@ -1,7 +1,7 @@
 # BIVMBPL - A What?
 
 Programming languages: Software developers, hackers and nerds use them every day, but how do they work and can you build your own? Since a few years, I've been intrigued by the idea of designing & building my own programming languages, and over the past few years I've read a bunch of blogs, manuals, and tutorials about this very subject. In this series you can read through my journey of developing yet another programming language (yes, I've made quite a few programming languages at this point, though most of them are not very good). As a quick disclaimer before we begin, there are many ways to do this, and as I'm a self taught programmer, there're also probably better ways. In my opinion this doesn't mean that such a project can't be a valuable lesson, since programming is largely problem solving, not just knowing syntax and 'how to code'.
-I hope that using this guide you'll be able to create something which works and that you'll experience the thrill of making your own programming language! This series will describe the making of a *bytecode interpreted virtual machine based programming language*. 
+I hope that using this guide you'll be able to create something which works and that you'll experience the thrill of making your own programming language! This series will describe the making of a _**b**ytecode **i**nterpreted **v**irtual **m**achine based **p**rogramming **l**anguage_. 
 
 ## Introduction
 
