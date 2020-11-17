@@ -8,7 +8,7 @@ The syntax and style will be quite similar to JavaScript and C (and similar lang
 
 ## Types
 
-There will be different types in DashScript. All typed will have a parent type called `DashObject`. 
+There will be different types in DashScript. All types will have a parent type called `DashObject`. 
 First there are numbers, both integers and floating point numbers:
 
 - `153`: contains no decimal separator, and therefore the compiler knows it should be interpreted as an `int`. Consequently:
@@ -16,9 +16,9 @@ First there are numbers, both integers and floating point numbers:
 
 *Note: Most programming languages also offer some sort of postfix notation to indicate if something is a floating point e.g. `100f` is a float*
 
-Next, an important type is a `string` which is basically an immutable collection of characters - aka text. Strings will be defined using `""`, where the string is in-between the quotation marks. String will not be passed as bytecode, but as constant string values, since once they're defined in the DashScript code, we can safely assume that those specific strings will never change. E.g. `"Hello World!"`
+Next, an important type is a `string` which is basically an immutable collection of characters - aka text. Strings will be defined using `""`, where the string is in-between the quotation marks. String will not be passed in the bytecode, but as constant string values, since once they're defined in the DashScript code, we can safely assume that those specific strings will never change. 
 
-There's also the bool type, which can have two values (keywords): `true` or `false`. These will be indicated using the mentioned keywords. 
+There's also the bool type, which can have two values (keywords): `true` or `false`. These will be indicated using the `true`/`false` keywords. 
 
 And lastly (for now), there's the `DashClass`. This will be a general object type, which we can use for, later on, extending DashScript with more advanced types.
 
@@ -60,7 +60,7 @@ Expressions are the most versatile (but also complex) part of DashScript. But in
 <constant int | float | bool | string values>
 <variable name>
 <function call>
-<function definition>
+<anonymous function definition>
 <expression> + | - | * | / <expression>
 !<expression>
 -<expression>
@@ -76,7 +76,8 @@ Operations, not to be confused with [statements](#statements) is the general nam
 if <expression> => <statement>
 else if <expression> => <statement>
 else => <statement>
-
+// While loop:
+while <expression> => <statement>
 ```
 
 
@@ -90,3 +91,18 @@ Statements are expressions which can be executed on a top level. This means that
 // or
 <code block>
 ```
+
+## Function definitions
+
+```
+// Anonymous function definition (only allowed in an expression):
+(arg1, arg2) => <statement>
+// Normal function
+function Hello(arg1, arg2) => <statement>
+
+// Functions are called like this:
+Hello("first", "second");
+// Also allowed (anonymous function call):
+((arg1, arg2) => print(arg1 + " " + arg2))("Hello", "World");
+```
+
