@@ -11,6 +11,7 @@ enum OpCode {
     LoadFloat,
     LoadBool, // Argument is only one byte.
     LoadConstant,
+    // Example: LoadInt 5 --> pushes an integer to the operator stack
     
     /*
     Perform said operation in the vm - on the top item(s) of the stack, these take no arguments.
