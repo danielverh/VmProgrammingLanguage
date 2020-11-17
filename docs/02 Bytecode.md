@@ -13,13 +13,16 @@ enum OpCode {
     LoadConstant,
     
     /*
-    Perform said operation in the vm, these take no argument.
+    Perform said operation in the vm - on the top item(s) of the stack, these take no arguments.
     */
     Add,
     Subtract,
     Multiply,
     Divide,
+    Not,
     Print,
+    Return,
+    
     /*
     Perform said operation in the vm, these take one integer argument (4 bytes).
     */
@@ -31,6 +34,11 @@ enum OpCode {
     SetVar,
     // Push value of a variable to the stack
     GetVar,
+    
+    // Starts defining a new function
+    DefineFunction,
+    // Ends defining a function.
+    EndFunction,
 }
 ```
 
